@@ -1,0 +1,140 @@
+    <!--FIXME: rendere dinamica la creazione delle utenze sezione account 
+    <div id="infoUtili" class="ml-5 mb-5">
+      <h1>Account</h1>
+      <div class="d-flex justify-content-around mt-4">
+        <div class="col-4">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show" id="list-home" role="tabpanel" aria-labelledby="list-home-list" style="background-color: white !important;">
+              <p>User: DEUBA\RY3090</p>
+               Button trigger modal3 
+              <button type="button" name="buttonPassword3" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">Clicca per ottenere la password</button>
+               Modal3 
+              <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cleanPassword()">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex">
+                        <h5 class="mr-3">Inserisci la password principale:</h5>
+                        <input type="password" name="inputPassword1" value="" id="inputThatGetPassword3">
+                      </div>
+                      <div class="d-flex">
+                        <h5 class="mr-3">La password è:</h5>
+                        <p id="passParagr3" class="mb-0"></p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cleanPassword()">Chiudi</button>
+                      <button type="button" class="btn btn-primary" onclick="getPassword3()">Ottieni la password</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list" style="background-color: white !important;">
+              <p>User: DEUBA\LKR160</p>
+               Button trigger modal 
+              <button type="button" name="buttonPassword" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Clicca per ottenere la password</button>
+               Modal 
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cleanPassword()">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex">
+                        <h5 class="mr-3">Inserisci la password principale:</h5>
+                        <input type="password" name="inputPassword1" value="" id="inputThatGetPassword">
+                      </div>
+                      <div class="d-flex">
+                        <h5 class="mr-3">La password è:</h5>
+                        <p id="passParagr" class="mb-0"></p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cleanPassword()">Chiudi</button>
+                      <button type="button" class="btn btn-primary" onclick="getPassword()">Ottieni la password</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list" style="background-color: white !important;">
+              <p>User: DEUBA\RY3090</p>
+               Button trigger modal2
+              <button type="button" name="buttonPassword2" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">Clicca per ottenere la password</button>
+               Modal2 
+              <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cleanPassword()">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex">
+                        <h5 class="mr-3">Inserisci la password principale:</h5>
+                        <input type="password" name="inputPassword2" value="" id="inputThatGetPassword2">
+                      </div>
+                      <div class="d-flex">
+                        <h5 class="mr-3">La password è:</h5>
+                        <p id="passParagr2" class="mb-0"></p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cleanPassword()">Chiudi</button>
+                      <button type="button" class="btn btn-primary" onclick="getPassword2()">Ottieni la password</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-dod" role="tabpanel" aria-labelledby="list-dod-list" style="background-color: white !important;">
+              <p>DEFRAVD836322</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       Button trigger modalAccount 
+      <button type="button" class="btn btn-outline-primary mt-4" data-toggle="modal" data-target="#modalAccount">Aggiungi account</button>
+       Modal2 
+      <div class="modal fade" id="modalAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cleanPassword()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex mb-3">
+                <h6 class="mr-3 col-4">Inserisci nome user:</h6>
+                <input type="text" name="inputUser1" value="" class="col-7">
+              </div>
+              <div class="d-flex mb-3">
+                <h6 class="mr-3 col-4">Inserisci password da salvare:</h6>
+                <input type='password' id='test-input' class="col-7" name="inputUserPassword1">
+                <input type='checkbox' id='check' style="position: absolute; right: 80px; top: 72px">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cleanPassword()">Chiudi</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Salva</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->

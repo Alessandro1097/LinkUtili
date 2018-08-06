@@ -1,0 +1,4 @@
+// link per creare elemento e assegnare una classe
+https://stackoverflow.com/questions/7833701/how-to-create-div-with-class 
+// link per smooth scrolling by Css3 
+http://jsfiddle.net/YYPKM/3/
