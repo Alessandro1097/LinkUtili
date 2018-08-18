@@ -65,7 +65,8 @@ function createNewCard() {
     .appendTo("#product" + randomNumber);
   $('<p class="card-text"></p>')
     .text(descriptionNewCard)
-    .appendTo("#product" + randomNumber);
+    .appendTo("#product" + randomNumber
+  );
   $('<a class="card-link text-success"></a>')
     .text(linkNewCard)
     .attr("href", linkNewCard)
@@ -74,18 +75,26 @@ function createNewCard() {
 }
 // filter per name
 // https://api.jquery.com/focusin/ to show the list when the input has been clicked
-function filterName() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName("li");
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
+  function filterName() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myUL");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
     }
   }
-}
+
+  function filterPerName() {
+    var input, filter, ul, li, a, i; 
+    input = $("#myInput").val();
+    filter = input.val().toUpperCase();
+    ul = $("#myUL").val();
+    li = 
+  }
