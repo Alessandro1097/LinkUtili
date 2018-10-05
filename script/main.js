@@ -66,7 +66,7 @@ function createNewCard() {
   $('<p class="card-text"></p>')
     .text(descriptionNewCard)
     .appendTo("#product" + randomNumber
-  );
+    );
   $('<a class="card-link text-success"></a>')
     .text(linkNewCard)
     .attr("href", linkNewCard)
@@ -75,6 +75,7 @@ function createNewCard() {
 }
 // filter per name
 // https://api.jquery.com/focusin/ to show the list when the input has been clicked
+$(document).ready(function () {
   function filterName() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myUL");
@@ -90,11 +91,12 @@ function createNewCard() {
       }
     }
   }
+});
 
-  function filterPerName() {
-    var input, filter, ul, li, a, i; 
-    input = $("#myInput").val();
-    filter = input.val().toUpperCase();
-    ul = $("#myUL").val();
-    li = 
-  }
+/*function filterPerName() {
+  var input, filter, ul, li, a, i;
+  input = $("#myInput").val();
+  filter = input.val().toUpperCase();
+  ul = $("#myUL").val();
+  li = 
+}*/

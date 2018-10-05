@@ -11,5 +11,4 @@
     file_put_contents('cardInfoContainer.json', $newJsonString);
     //echo $newJsonString;
     $secondoTitolo = $data[1]['title']; 
-    echo $newJsonString;
 ?>
